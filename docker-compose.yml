@@ -1,0 +1,12 @@
+version: '3.1'
+services:
+  glhfDB:
+    image: 'mysql:8.2.0'
+    ports:
+      - 3306:3306
+    environment:
+      - MYSQL_ROOT_HOST=%
+      - MYSQL_USER=glhf
+      - MYSQL_PASSWORD=glhf
+      - MYSQL_DATABASE=happy_family_db
+      - MYSQL_RANDOM_ROOT_PASSWORD=true
